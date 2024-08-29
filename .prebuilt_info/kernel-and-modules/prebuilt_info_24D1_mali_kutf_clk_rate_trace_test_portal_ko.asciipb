@@ -1,0 +1,11 @@
+drops {
+  android_build_drop {
+    build_id: "12143323"
+    target: "comet"
+    source_file: "mali_kutf_clk_rate_trace_test_portal.ko"
+  }
+  dest_file: "24D1/mali_kutf_clk_rate_trace_test_portal.ko"
+  version: "12143323"
+  version_group: "kernel-and-modules"
+  git_project: "device/google/comet-kernels/6.1"
+}

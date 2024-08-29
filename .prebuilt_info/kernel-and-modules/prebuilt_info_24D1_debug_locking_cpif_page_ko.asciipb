@@ -1,0 +1,11 @@
+drops {
+  android_build_drop {
+    build_id: "12143323"
+    target: "comet_debug_locking"
+    source_file: "cpif_page.ko"
+  }
+  dest_file: "24D1/debug_locking/cpif_page.ko"
+  version: "12143323"
+  version_group: "kernel-and-modules"
+  git_project: "device/google/comet-kernels/6.1"
+}

@@ -1,0 +1,11 @@
+drops {
+  android_build_drop {
+    build_id: "12143323"
+    target: "comet_debug_api"
+    source_file: "s2mpg14-key.ko"
+  }
+  dest_file: "24D1/debug_api/s2mpg14-key.ko"
+  version: "12143323"
+  version_group: "kernel-and-modules"
+  git_project: "device/google/comet-kernels/6.1"
+}

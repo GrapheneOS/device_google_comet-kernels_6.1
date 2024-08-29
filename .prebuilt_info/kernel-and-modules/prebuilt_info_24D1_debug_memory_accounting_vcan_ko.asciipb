@@ -1,0 +1,11 @@
+drops {
+  android_build_drop {
+    build_id: "12143323"
+    target: "comet_debug_memory_accounting"
+    source_file: "vcan.ko"
+  }
+  dest_file: "24D1/debug_memory_accounting/vcan.ko"
+  version: "12143323"
+  version_group: "kernel-and-modules"
+  git_project: "device/google/comet-kernels/6.1"
+}
