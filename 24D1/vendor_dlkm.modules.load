@@ -37,6 +37,7 @@ extra/private/google-modules/bms/rt9471_charger.ko
 extra/private/google-modules/display/samsung/panel/panel-boe-nt37290.ko
 extra/private/google-modules/edgetpu/rio/drivers/edgetpu/rio.ko
 extra/private/google-modules/fingerprint/fpc/fpc1020_platform_tee.ko
+extra/private/google-modules/gps/broadcom/bcm47765/bbd_pps_gpio.ko
 extra/private/google-modules/gpu/mali_kbase/tests/kutf/mali_kutf.ko
 extra/private/google-modules/gpu/mali_kbase/tests/mali_kutf_clk_rate_trace/kernel/mali_kutf_clk_rate_trace_test_portal.ko
 extra/private/google-modules/gxp/zuma/gxp.ko

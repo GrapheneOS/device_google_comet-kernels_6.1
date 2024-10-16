@@ -10,3 +10,4 @@ blocklist sec_touch
 blocklist sscoredump_sample_test.ko
 blocklist sscoredump_test.ko
 blocklist syna_touch
+
