@@ -41,8 +41,6 @@ kernel/net/bluetooth/rfcomm/rfcomm.ko
 kernel/net/bluetooth/hidp/hidp.ko
 kernel/net/l2tp/l2tp_core.ko
 kernel/net/l2tp/l2tp_ppp.ko
-kernel/net/tipc/tipc.ko
-kernel/net/tipc/diag.ko
 kernel/net/rfkill/rfkill.ko
 kernel/net/6lowpan/6lowpan.ko
 kernel/net/6lowpan/nhc_dest.ko
