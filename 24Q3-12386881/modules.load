@@ -73,6 +73,7 @@ extra/private/google-modules/soc/gs/drivers/soc/google/pixel_stat/pixel_stat_sys
 extra/private/google-modules/soc/gs/drivers/soc/google/pixel_stat/mm/pixel_stat_mm.ko
 extra/private/google-modules/soc/gs/drivers/soc/google/pkvm-s2mpu/pkvm-s2mpu-v9/pkvm-s2mpu-v9.ko
 extra/private/google-modules/soc/gs/drivers/soc/google/perf_trace_counters.ko
+extra/private/google-modules/soc/gs/drivers/soc/google/kernel-top.ko
 extra/private/google-modules/soc/gs/drivers/regulator/pmic_class.ko
 extra/private/google-modules/soc/gs/drivers/regulator/s2mpg14-regulator.ko
 extra/private/google-modules/soc/gs/drivers/regulator/s2mpg14-powermeter.ko
@@ -102,7 +103,6 @@ extra/private/google-modules/soc/gs/drivers/usb/host/xhci-exynos.ko
 extra/private/google-modules/soc/gs/drivers/usb/gadget/function/usb_f_dm.ko
 extra/private/google-modules/soc/gs/drivers/usb/gadget/function/usb_f_dm1.ko
 extra/private/google-modules/soc/gs/drivers/usb/gadget/function/usb_f_etr_miu.ko
-extra/private/google-modules/soc/gs/drivers/usb/gadget/function/usb_f_rndis.ko
 extra/private/google-modules/soc/gs/drivers/usb/typec/tcpm/google/google_tcpci_shim.ko
 extra/private/google-modules/soc/gs/drivers/usb/typec/tcpm/google/usb_psy.ko
 extra/private/google-modules/soc/gs/drivers/usb/typec/tcpm/google/tcpci_max77759.ko
@@ -130,8 +130,8 @@ extra/private/google-modules/soc/gs/drivers/clocksource/exynos_mct_v3.ko
 extra/private/google-modules/soc/gs/drivers/devfreq/google/exynos_devfreq.ko
 extra/private/google-modules/soc/gs/drivers/performance/gs_perf_mon/gs_perf_mon.ko
 extra/private/google-modules/soc/gs/drivers/performance/lat_governors/gs_governor_memlat.ko
-extra/private/google-modules/soc/gs/drivers/performance/lat_governors/gs_governor_dsulat.ko
 extra/private/google-modules/soc/gs/drivers/performance/lat_governors/gs_governor_utils.ko
+extra/private/google-modules/soc/gs/drivers/performance/lat_governors/gs_governor_dsulat.ko
 extra/private/google-modules/soc/gs/drivers/iio/power/odpm.ko
 extra/private/google-modules/soc/gs/drivers/bts/bts.ko
 extra/private/google-modules/soc/gs/drivers/block/zram/zram_gs.ko
