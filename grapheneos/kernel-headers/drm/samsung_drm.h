@@ -180,6 +180,7 @@ struct histogram_channel_config {
 };
 #define EXYNOS_DRM_HISTOGRAM_EVENT 0x80000000
 #define EXYNOS_DRM_HISTOGRAM_CHANNEL_EVENT 0x80000001
+#define EXYNOS_DRM_CONTEXT_HISTOGRAM_EVENT 0x80000002
 struct exynos_drm_histogram_event {
   struct drm_event base;
   struct histogram_bins bins;
@@ -191,11 +192,19 @@ struct exynos_drm_histogram_channel_event {
   __u16 crtc_id;
   __u16 hist_id;
 };
+struct exynos_drm_context_histogram_event {
+  struct drm_event base;
+  struct histogram_bins bins;
+  __u32 crtc_id;
+  __u32 user_handle;
+};
 #define EXYNOS_HISTOGRAM_REQUEST 0x0
 #define EXYNOS_HISTOGRAM_CANCEL 0x1
 #define EXYNOS_HISTOGRAM_CHANNEL_REQUEST 0x20
 #define EXYNOS_HISTOGRAM_CHANNEL_CANCEL 0x21
 #define EXYNOS_HISTOGRAM_CHANNEL_DATA_REQUEST 0x30
+#define EXYNOS_CONTEXT_HISTOGRAM_EVENT_REQUEST 0x40
+#define EXYNOS_CONTEXT_HISTOGRAM_EVENT_CANCEL 0x41
 struct exynos_drm_histogram_channel_request {
   __u32 crtc_id;
   __u32 hist_id;
@@ -205,11 +214,18 @@ struct exynos_drm_histogram_channel_data_request {
   __u16 hist_id;
   struct histogram_bins * bins;
 };
+struct exynos_drm_context_histogram_arg {
+  __u32 crtc_id;
+  __u32 user_handle;
+  __u32 flags;
+};
 #define DRM_IOCTL_EXYNOS_HISTOGRAM_REQUEST DRM_IOW(DRM_COMMAND_BASE + EXYNOS_HISTOGRAM_REQUEST, __u32)
 #define DRM_IOCTL_EXYNOS_HISTOGRAM_CANCEL DRM_IOW(DRM_COMMAND_BASE + EXYNOS_HISTOGRAM_CANCEL, __u32)
 #define DRM_IOCTL_EXYNOS_HISTOGRAM_CHANNEL_REQUEST DRM_IOW(DRM_COMMAND_BASE + EXYNOS_HISTOGRAM_CHANNEL_REQUEST, struct exynos_drm_histogram_channel_request)
 #define DRM_IOCTL_EXYNOS_HISTOGRAM_CHANNEL_CANCEL DRM_IOW(DRM_COMMAND_BASE + EXYNOS_HISTOGRAM_CHANNEL_CANCEL, struct exynos_drm_histogram_channel_request)
 #define DRM_IOCTL_EXYNOS_HISTOGRAM_CHANNEL_DATA_REQUEST DRM_IOW(DRM_COMMAND_BASE + EXYNOS_HISTOGRAM_CHANNEL_DATA_REQUEST, struct exynos_drm_histogram_channel_data_request)
+#define DRM_IOCTL_EXYNOS_CONTEXT_HISTOGRAM_EVENT_REQUEST DRM_IOW(DRM_COMMAND_BASE + EXYNOS_CONTEXT_HISTOGRAM_EVENT_REQUEST, struct exynos_drm_context_histogram_arg)
+#define DRM_IOCTL_EXYNOS_CONTEXT_HISTOGRAM_EVENT_CANCEL DRM_IOW(DRM_COMMAND_BASE + EXYNOS_CONTEXT_HISTOGRAM_EVENT_CANCEL, struct exynos_drm_context_histogram_arg)
 #ifdef __cplusplus
 }
 #endif
